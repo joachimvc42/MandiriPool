@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mandiri Pool & Spa — Spesialis kolam renang di Lombok. Jasa pembersihan, perawatan kimia, kontraktor, suplier pompa, filter, dan aksesoris kolam renang terpercaya di Praya, Lombok Tengah." />
+  <meta name="keywords" content="kolam renang lombok, pool maintenance lombok, obat kolam renang praya, mandiri pool spa, jasa kolam renang lombok tengah" />
+  <meta property="og:title" content="Mandiri Pool & Spa — Spesialis Kolam Renang Lombok" />
+  <meta property="og:description" content="Jasa perawatan, pembersihan, dan suplai kimia kolam renang terpercaya di Lombok." />
+  <title>Mandiri Pool &amp; Spa — Spesialis Kolam Renang Lombok</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #071928;
+      --deep:       #0a2438;
+      --teal:       #0a7e93;
+      --aqua:       #0ec4e0;
+      --aqua-light: #7de8f5;
+      --gold:       #c9922c;
+      --gold-light: #e8b44b;
+      --sand:       #f4ede0;
+      --cream:      #faf7f2;
+      --white:      #ffffff;
+      --text-dark:  #0d1f2d;
+      --text-muted: #4a6070;
+      --radius:     12px;
+      --transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      color: var(--text-dark);
+      background: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--navy); }
+    ::-webkit-scrollbar-thumb { background: var(--aqua); border-radius: 3px; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background var(--transition), padding var(--transition), backdrop-filter var(--transition);
+    }
+    nav.scrolled {
+      background: rgba(7, 25, 40, 0.94);
+      backdrop-filter: blur(16px);
+      padding: 14px 48px;
+      border-bottom: 1px solid rgba(14, 196, 224, 0.12);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--aqua), var(--teal));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 0 20px rgba(14, 196, 224, 0.35);
+    }
+    .logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      line-height: 1;
+    }
+    .logo-text span {
+      display: block;
+      font-size: 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      color: var(--aqua-light);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--aqua-light); }
+
+    .nav-wa {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: transform var(--transition), box-shadow var(--transition);
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    }
+    .nav-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
+    }
+    .nav-wa svg { width: 16px; height: 16px; fill: white; }
+
+    /* ─── HERO ─── */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 700px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=85&fit=crop');
+      background-size: cover;
+      background-position: center 60%;
+      transform: scale(1.05);
+      transition: transform 0s;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(7, 25, 40, 0.88) 0%,
+        rgba(10, 36, 56, 0.65) 50%,
+        rgba(7, 25, 40, 0.35) 100%
+      );
+    }
+    .hero-overlay::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 200px;
+      background: linear-gradient(to top, var(--cream), transparent);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 48px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--aqua-light);
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--aqua);
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 300;
+      line-height: 0.95;
+      color: var(--white);
+      margin-bottom: 28px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.9s 0.4s forwards;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--aqua-light);
+    }
+    .hero-title strong {
+      font-weight: 600;
+      display: block;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      margin-bottom: 48px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s 0.6s forwards;
+    }
+
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s 0.8s forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      background: linear-gradient(135deg, var(--aqua), var(--teal));
+      color: white;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      transition: transform var(--transition), box-shadow var(--transition);
+      box-shadow: 0 6px 30px rgba(14, 196, 224, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(14, 196, 224, 0.5);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: transparent;
+      color: rgba(255,255,255,0.85);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      transition: all var(--transition);
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.6);
+      color: white;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 48px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.45);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: fadeUp 1s 1.2s forwards;
+      opacity: 0;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+      animation: scrollPulse 2.5s ease-in-out infinite;
+    }
+
+    /* ─── STATS BAR ─── */
+    #stats {
+      background: var(--navy);
+      padding: 40px 48px;
+    }
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+    .stat-item {
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 300;
+      color: var(--aqua);
+      line-height: 1;
+    }
+    .stat-num sup {
+      font-size: 24px;
+      vertical-align: super;
+    }
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 6px;
+    }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 100px 48px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 20px;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--teal);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .section-title em { font-style: italic; color: var(--teal); }
+
+    .section-lead {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 560px;
+    }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--cream); }
+
+    .services-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 64px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+    }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+      aspect-ratio: 4/3;
+      cursor: default;
+    }
+
+    .service-card:first-child { border-radius: var(--radius) 0 0 0; }
+    .service-card:nth-child(2) { border-radius: 0 var(--radius) 0 0; }
+    .service-card:nth-child(3) { border-radius: 0 0 0 var(--radius); }
+    .service-card:last-child { border-radius: 0 0 var(--radius) 0; }
+
+    .service-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .service-card:hover .service-bg { transform: scale(1.06); }
+
+    .service-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7,25,40,0.95) 0%, rgba(7,25,40,0.3) 60%, transparent 100%);
+      transition: background 0.5s;
+    }
+    .service-card:hover .service-overlay {
+      background: linear-gradient(to top, rgba(7,25,40,0.98) 0%, rgba(7,25,40,0.5) 70%, rgba(7,25,40,0.15) 100%);
+    }
+
+    .service-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 36px;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(14, 196, 224, 0.15);
+      border: 1px solid rgba(14, 196, 224, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+      transition: all 0.4s;
+    }
+    .service-card:hover .service-icon {
+      background: rgba(14, 196, 224, 0.25);
+      border-color: var(--aqua);
+    }
+
+    .service-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+      transform: translateY(8px);
+      opacity: 0;
+      transition: all 0.4s;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .service-card:hover .service-desc {
+      opacity: 1;
+      transform: translateY(0);
+      max-height: 100px;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+    .service-tag {
+      padding: 4px 12px;
+      background: rgba(14, 196, 224, 0.12);
+      border: 1px solid rgba(14, 196, 224, 0.25);
+      border-radius: 100px;
+      font-size: 11px;
+      color: var(--aqua-light);
+      letter-spacing: 0.06em;
+    }
+
+    /* ─── GALLERY ─── */
+    #gallery { background: var(--navy); padding: 100px 48px; }
+    #gallery .section-title { color: white; }
+    #gallery .section-lead { color: rgba(255,255,255,0.55); }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 12px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--deep);
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-column: 1 / 3;
+      aspect-ratio: 16/9;
+    }
+    .gallery-item:nth-child(2) { aspect-ratio: 1; }
+    .gallery-item:nth-child(3) { aspect-ratio: 1; }
+    .gallery-item:nth-child(4) {
+      grid-column: 2 / 4;
+      aspect-ratio: 16/9;
+    }
+    .gallery-item:nth-child(5) { aspect-ratio: 1; }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .gallery-item:hover .gallery-img { transform: scale(1.06); }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 24px 20px 20px;
+      background: linear-gradient(to top, rgba(7,25,40,0.9), transparent);
+      color: rgba(255,255,255,0.85);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      transform: translateY(100%);
+      transition: transform 0.4s;
+    }
+    .gallery-item:hover .gallery-caption { transform: translateY(0); }
+
+    /* ─── ABOUT / SHOP ─── */
+    #about {
+      background: var(--sand);
+      overflow: hidden;
+    }
+    .about-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+    .about-photo {
+      width: 100%;
+      border-radius: var(--radius);
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .about-badge {
+      position: absolute;
+      bottom: -24px;
+      right: -24px;
+      width: 140px;
+      height: 140px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 4px solid var(--cream);
+      box-shadow: 0 20px 50px rgba(7,25,40,0.2);
+    }
+    .about-badge-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      font-weight: 300;
+      color: var(--aqua);
+      line-height: 1;
+    }
+    .about-badge-text {
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-top: 4px;
+      padding: 0 12px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .about-content .section-title { color: var(--navy); }
+
+    .about-features {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .about-feature-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(14, 196, 224, 0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .about-feature-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--navy);
+      margin-bottom: 3px;
+    }
+    .about-feature-text p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ─── PRODUCTS / ACCESSORIES ─── */
+    #products { background: var(--cream); }
+
+    .products-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 56px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.12);
+    }
+
+    .product-img-wrap {
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: #f0f4f8;
+    }
+    .product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .product-card:hover .product-img { transform: scale(1.05); }
+
+    .product-info {
+      padding: 16px 18px 20px;
+    }
+    .product-category {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 6px;
+    }
+    .product-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .product-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ─── REVIEWS ─── */
+    #reviews { background: var(--navy); padding: 100px 48px; }
+    #reviews .section-title { color: white; }
+    #reviews .section-lead { color: rgba(255,255,255,0.55); }
+
+    .reviews-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 56px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .review-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .review-card:hover {
+      background: rgba(14, 196, 224, 0.06);
+      border-color: rgba(14, 196, 224, 0.2);
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+    .review-stars span { color: var(--gold-light); font-size: 16px; }
+
+    .review-quote {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .review-quote::before {
+      content: '"';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      color: var(--aqua);
+      opacity: 0.4;
+      line-height: 0;
+      vertical-align: -18px;
+      margin-right: 4px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .review-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), var(--aqua));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      flex-shrink: 0;
+    }
+    .review-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+    }
+    .review-date {
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      margin-top: 2px;
+    }
+    .review-source {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+    }
+    .review-source img { width: 14px; height: 14px; }
+
+    /* ─── CTA WHATSAPP ─── */
+    #cta {
+      background: linear-gradient(135deg, #0a1e30, #0a7e93 60%, #0ec4e0);
+      padding: 100px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+    .cta-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--aqua-light);
+      margin-bottom: 20px;
+    }
+    .cta-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 300;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .cta-title em { font-style: italic; }
+    .cta-sub {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 48px;
+      line-height: 1.65;
+    }
+
+    .cta-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 20px 48px;
+      background: white;
+      color: #128c7e;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      transition: transform var(--transition), box-shadow var(--transition);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    }
+    .cta-wa-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+    .cta-wa-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: #25d366;
+    }
+
+    .cta-contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+    .cta-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.65);
+      font-size: 14px;
+    }
+    .cta-contact-item span:first-child { font-size: 20px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 60px 48px 36px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand .logo-text { font-size: 28px; }
+    .footer-brand p {
+      margin-top: 16px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.75;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 20px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 12px; }
+    .footer-col a {
+      font-size: 14px;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-col a:hover { color: var(--aqua-light); }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-bottom p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .footer-google {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      transition: all 0.3s;
+    }
+    .footer-google:hover {
+      background: rgba(255,255,255,0.1);
+      color: white;
+    }
+    .footer-google span:first-child { font-size: 16px; }
+
+    /* ─── FLOATING WA ─── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 200;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
+      text-decoration: none;
+      transition: transform var(--transition), box-shadow var(--transition);
+      animation: waPulse 3s ease-in-out infinite;
+    }
+    .wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 36px rgba(37, 211, 102, 0.65);
+      animation: none;
+    }
+    .wa-float svg { width: 30px; height: 30px; fill: white; }
+    .wa-float-tooltip {
+      position: absolute;
+      right: calc(100% + 12px);
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--navy);
+      color: white;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      padding: 8px 16px;
+      border-radius: 100px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .wa-float-tooltip::after {
+      content: '';
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-left-color: var(--navy);
+    }
+    .wa-float:hover .wa-float-tooltip { opacity: 1; }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.5; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.15); }
+    }
+    @keyframes waPulse {
+      0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+      50% { box-shadow: 0 6px 36px rgba(37,211,102,0.75), 0 0 0 12px rgba(37,211,102,0.08); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.23,1,0.32,1), transform 0.8s cubic-bezier(0.23,1,0.32,1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      section { padding: 80px 32px; }
+      #gallery, #reviews, #cta { padding: 80px 32px; }
+      footer { padding: 60px 32px 36px; }
+
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-item { border-right: none; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .stat-item:last-child, .stat-item:nth-child(3) { border-bottom: none; }
+      .about-inner { grid-template-columns: 1fr; gap: 48px; }
+      .about-badge { right: 16px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      nav.scrolled { padding: 12px 24px; }
+      .nav-links { display: none; }
+      section { padding: 64px 24px; }
+      #gallery, #reviews, #cta { padding: 64px 24px; }
+      footer { padding: 48px 24px 28px; }
+      #stats { padding: 32px 24px; }
+      .hero-content { padding: 0 24px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card:first-child, .service-card:nth-child(2),
+      .service-card:nth-child(3), .service-card:last-child {
+        border-radius: var(--radius);
+      }
+
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item { grid-column: auto !important; aspect-ratio: 16/9 !important; }
+
+      .reviews-grid { grid-template-columns: 1fr; }
+
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+
+      .cta-wa-btn { padding: 18px 36px; font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-icon">🌊</div>
+      <div class="logo-text">
+        Mandiri Pool
+        <span>& Spa · Lombok</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#services">Layanan</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#products">Produk</a></li>
+      <li><a href="#reviews">Ulasan</a></li>
+      <li><a href="#cta">Kontak</a></li>
+    </ul>
+
+    <a href="https://wa.me/6285903741112?text=Halo%20Mandiri%20Pool%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20kolam%20renang." class="nav-wa" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">Praya · Lombok Tengah · NTB</div>
+      <h1 class="hero-title">
+        <em>Spesialis</em>
+        <strong>Kolam Renang</strong>
+        Lombok
+      </h1>
+      <p class="hero-sub">
+        Dari perawatan rutin hingga proyek konstruksi besar — kami menyediakan solusi kolam renang terlengkap dan terpercaya di Lombok Tengah.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/6285903741112?text=Halo%20Mandiri%20Pool%2C%20saya%20ingin%20konsultasi%20gratis%20untuk%20kolam%20renang." class="btn-primary" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Konsultasi Gratis
+        </a>
+        <a href="#services" class="btn-secondary">Lihat Layanan ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ─── STATS ─── -->
+  <div id="stats">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <div class="stat-num">5<sup>+</sup></div>
+        <div class="stat-label">Tahun Pengalaman</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:0.1s">
+        <div class="stat-num">200<sup>+</sup></div>
+        <div class="stat-label">Proyek Kolam Selesai</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:0.2s">
+        <div class="stat-num">50<sup>+</sup></div>
+        <div class="stat-label">Klien Aktif</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:0.3s">
+        <div class="stat-num">4.9</div>
+        <div class="stat-label">Rating Google Maps</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SERVICES ─── -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="services-header">
+        <div>
+          <div class="section-eyebrow reveal">Layanan Kami</div>
+          <h2 class="section-title reveal" style="transition-delay:0.1s">
+            Semua yang Anda<br><em>butuhkan</em> untuk kolam
+          </h2>
+        </div>
+        <p class="section-lead reveal" style="transition-delay:0.2s">
+          Kami menyediakan layanan lengkap mulai dari pembersihan rutin, suplai kimia, pemasangan pompa dan filter, hingga renovasi total kolam renang Anda.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div class="service-bg" style="background-image: url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80&fit=crop');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon">🧪</div>
+            <div class="service-name">Perawatan Kimia</div>
+            <div class="service-desc">Treatment kimia profesional untuk menjaga keseimbangan pH dan kejernihan air kolam renang Anda sepanjang waktu.</div>
+            <div class="service-tags">
+              <span class="service-tag">Klorin</span>
+              <span class="service-tag">PAC</span>
+              <span class="service-tag">Soda Asam</span>
+              <span class="service-tag">Trusi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal" style="transition-delay:0.1s">
+          <div class="service-bg" style="background-image: url('https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?w=800&q=80&fit=crop');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon">🔧</div>
+            <div class="service-name">Pompa & Filter</div>
+            <div class="service-desc">Pemasangan, servis, dan penggantian pompa sirkulasi serta sistem filtrasi kolam renang untuk performa optimal.</div>
+            <div class="service-tags">
+              <span class="service-tag">Pompa Renang</span>
+              <span class="service-tag">Sand Filter</span>
+              <span class="service-tag">Instalasi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal" style="transition-delay:0.15s">
+          <div class="service-bg" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80&fit=crop');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon">🏗️</div>
+            <div class="service-name">Kontraktor Kolam</div>
+            <div class="service-desc">Pembangunan dan renovasi kolam renang dari nol. Kami tangani desain, konstruksi, hingga finishing keramik dan waterproofing.</div>
+            <div class="service-tags">
+              <span class="service-tag">Konstruksi Baru</span>
+              <span class="service-tag">Renovasi</span>
+              <span class="service-tag">Waterproofing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal" style="transition-delay:0.2s">
+          <div class="service-bg" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80&fit=crop');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon">✨</div>
+            <div class="service-name">Maintenance Rutin</div>
+            <div class="service-desc">Program perawatan berkala mingguan atau bulanan. Kolam selalu bersih, jernih, dan siap digunakan kapan saja.</div>
+            <div class="service-tags">
+              <span class="service-tag">Pembersihan</span>
+              <span class="service-tag">Vakum Kolam</span>
+              <span class="service-tag">Paket Bulanan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section id="gallery">
+    <div class="section-inner">
+      <div class="gallery-header">
+        <div>
+          <div class="section-eyebrow reveal">Galeri Proyek</div>
+          <h2 class="section-title reveal" style="transition-delay:0.1s">
+            Kolam <em>impian</em><br>yang kami wujudkan
+          </h2>
+        </div>
+        <p class="section-lead reveal" style="transition-delay:0.2s">
+          Setiap kolam yang kami kerjakan mencerminkan komitmen kami terhadap kualitas dan keindahan.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&fit=crop" alt="Kolam renang infinity mewah" loading="lazy" />
+          <div class="gallery-caption">Villa Pool — Infinity Design</div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:0.1s">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=600&q=85&fit=crop" alt="Kolam renang biru jernih" loading="lazy" />
+          <div class="gallery-caption">Residential Pool</div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:0.15s">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=85&fit=crop" alt="Hotel pool Lombok" loading="lazy" />
+          <div class="gallery-caption">Hotel Pool — Praya</div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:0.2s">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1540202404-d0c7fe46a087?w=1200&q=85&fit=crop" alt="Kolam renang outdoor tropis" loading="lazy" />
+          <div class="gallery-caption">Tropical Outdoor Pool</div>
+        </div>
+        <div class="gallery-item reveal" style="transition-delay:0.25s">
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=85&fit=crop" alt="Kolam renang perawatan" loading="lazy" />
+          <div class="gallery-caption">Maintenance Service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT / SHOP ─── -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-visual reveal">
+        <img
+          class="about-photo"
+          src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiY4OwbZBIny-TSx-t-T29fGUM-VMR5FfzdswaolfaulbigS0l9zd2TpUYjpuCNE5yorm9GSoy5ZXw-GfqgjKqawgz3dYjbp4b3jvCEa1HKdN-fhwdertsKt_i4kX1oUHPILOxWQ=w800-h600-k-no"
+          alt="Toko Mandiri Pool & Spa di Praya, Lombok Tengah"
+          onerror="this.src='https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80&fit=crop'"
+        />
+        <div class="about-badge">
+          <div class="about-badge-num">NTB</div>
+          <div class="about-badge-text">Mitra Terpercaya Lombok</div>
+        </div>
+      </div>
+
+      <div class="about-content reveal" style="transition-delay:0.2s">
+        <div class="section-eyebrow">Tentang Kami</div>
+        <h2 class="section-title">
+          Toko kolam renang<br><em>terlengkap</em> di Praya
+        </h2>
+        <p class="section-lead" style="margin-bottom: 0;">
+          Mandiri Pool & Spa hadir di Jl. Purnama, Praya, sebagai satu-satunya toko spesialis kolam renang lengkap di Lombok Tengah — mulai dari obat kimia, pompa, filter, aksesoris, hingga layanan kontraktor.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">🏆</div>
+            <div class="about-feature-text">
+              <strong>Berpengalaman & Terpercaya</strong>
+              <p>Sudah dipercaya ratusan pelanggan dari villa, hotel, hingga rumah pribadi di seluruh Lombok.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">📦</div>
+            <div class="about-feature-text">
+              <strong>Stok Lengkap & Selalu Tersedia</strong>
+              <p>Semua kebutuhan kolam renang tersedia — kimia, pompa, filter, aksesoris, dan suku cadang.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">⚡</div>
+            <div class="about-feature-text">
+              <strong>Respons Cepat via WhatsApp</strong>
+              <p>Konsultasi, pemesanan, dan penanganan darurat — semua bisa langsung via WhatsApp 24/7.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCTS ─── -->
+  <section id="products">
+    <div class="section-inner">
+      <div class="products-header">
+        <div>
+          <div class="section-eyebrow reveal">Produk & Aksesoris</div>
+          <h2 class="section-title reveal" style="transition-delay:0.1s">
+            Peralatan kolam<br><em>berkualitas</em>
+          </h2>
+        </div>
+        <p class="section-lead reveal" style="transition-delay:0.2s">
+          Semua produk yang kami jual telah teruji kualitasnya dan tersedia dengan harga kompetitif.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img class="product-img" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80&fit=crop" alt="Obat kimia klorin kolam renang" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80&fit=crop'" />
+          </div>
+          <div class="product-info">
+            <div class="product-category">Kimia Kolam</div>
+            <div class="product-name">Klorin & Kaporit</div>
+            <div class="product-desc">Disinfektan utama kolam renang untuk membunuh bakteri dan alga. Tersedia granular dan tablet.</div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" style="transition-delay:0.1s">
+          <div class="product-img-wrap">
+            <img class="product-img" src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&q=80&fit=crop" alt="Pompa kolam renang" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80&fit=crop'" />
+          </div>
+          <div class="product-info">
+            <div class="product-category">Mesin & Pompa</div>
+            <div class="product-name">Pompa Sirkulasi</div>
+            <div class="product-desc">Pompa air kolam renang berkualitas untuk sirkulasi optimal. Berbagai kapasitas tersedia.</div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" style="transition-delay:0.15s">
+          <div class="product-img-wrap">
+            <img class="product-img" src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=400&q=80&fit=crop" alt="Filter pasir kolam renang" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400&q=80&fit=crop'" />
+          </div>
+          <div class="product-info">
+            <div class="product-category">Filtrasi</div>
+            <div class="product-name">Sand Filter & Media</div>
+            <div class="product-desc">Sistem filtrasi pasir silika untuk menjaga air kolam selalu jernih dan bebas kotoran.</div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" style="transition-delay:0.2s">
+          <div class="product-img-wrap">
+            <img class="product-img" src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&q=80&fit=crop" alt="Aksesoris kolam renang" loading="lazy"
+              onerror="this.src='https://images.unsplash.com/photo-1543161949-1f9193812ce8?w=400&q=80&fit=crop'" />
+          </div>
+          <div class="product-info">
+            <div class="product-category">Aksesoris</div>
+            <div class="product-name">Aksesoris Kolam Lengkap</div>
+            <div class="product-desc">Selang vakum, skimmer, brush kolam, lampu LED underwater, dan perlengkapan lainnya.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── REVIEWS ─── -->
+  <section id="reviews">
+    <div class="section-inner">
+      <div class="reviews-header">
+        <div>
+          <div class="section-eyebrow reveal">Ulasan Pelanggan</div>
+          <h2 class="section-title reveal" style="transition-delay:0.1s">
+            Dipercaya oleh<br><em>ratusan</em> pelanggan
+          </h2>
+        </div>
+        <p class="section-lead reveal" style="transition-delay:0.2s">
+          Kepercayaan pelanggan adalah prioritas utama kami. Baca apa yang mereka katakan tentang layanan Mandiri Pool.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="review-quote">
+            Pelayanan Mandiri Pool sangat memuaskan! Kolam renang villa kami yang keruh langsung jernih setelah treatment kimia dari tim mereka. Teknisinya profesional dan ramah. Sudah jadi pelanggan tetap lebih dari 2 tahun.
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">B</div>
+            <div>
+              <div class="review-name">Budi Santoso</div>
+              <div class="review-date">Pemilik Villa · Lombok Tengah</div>
+            </div>
+            <div class="review-source">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" width="14" height="14" style="object-fit:contain" />
+              Google
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal" style="transition-delay:0.1s">
+          <div class="review-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="review-quote">
+            Kami mempercayakan perawatan 2 kolam renang hotel kami ke Mandiri Pool sudah setahun lebih. Hasilnya konsisten bersih dan tamu-tamu kami selalu puas. Respons cepat saat ada kerusakan mendadak. Sangat direkomendasikan!
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">H</div>
+            <div>
+              <div class="review-name">Hotel Rinjani Praya</div>
+              <div class="review-date">Manajemen Hotel · Praya</div>
+            </div>
+            <div class="review-source">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" width="14" height="14" style="object-fit:contain" />
+              Google
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal" style="transition-delay:0.2s">
+          <div class="review-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="review-quote">
+            Beli chemical dan aksesoris di sini selalu ada stok lengkap. Pemiliknya juga mau berbagi tips merawat kolam sendiri. Harga bersaing, kualitas produk terjamin. Satu-satunya toko pool shop yang saya rekomendasikan di Praya!
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">A</div>
+            <div>
+              <div class="review-name">Ahmad Fauzi</div>
+              <div class="review-date">Pelanggan Tetap · Lombok</div>
+            </div>
+            <div class="review-source">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" width="14" height="14" style="object-fit:contain" />
+              Google
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ─── -->
+  <section id="cta">
+    <div class="cta-inner">
+      <div class="cta-eyebrow reveal">Hubungi Kami</div>
+      <h2 class="cta-title reveal" style="transition-delay:0.1s">
+        Kolam renang <em>impian</em><br>Anda dimulai di sini
+      </h2>
+      <p class="cta-sub reveal" style="transition-delay:0.2s">
+        Konsultasi gratis, respons cepat, dan penawaran terbaik. Kami siap membantu Anda — dari perawatan rutin hingga proyek pembangunan kolam.
+      </p>
+      <div class="reveal" style="transition-delay:0.3s">
+        <a href="https://wa.me/6285903741112?text=Halo%20Mandiri%20Pool%20%26%20Spa%2C%20saya%20ingin%20konsultasi%20tentang%20kolam%20renang.%20Bisa%20dibantu%3F" class="cta-wa-btn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat WhatsApp Sekarang
+        </a>
+      </div>
+
+      <div class="cta-contact-row reveal" style="transition-delay:0.4s">
+        <div class="cta-contact-item">
+          <span>📞</span>
+          <span>0859 0374 1112</span>
+        </div>
+        <div class="cta-contact-item">
+          <span>📧</span>
+          <span>abdulmrifai90@gmail.com</span>
+        </div>
+        <div class="cta-contact-item">
+          <span>📍</span>
+          <span>Jl. Purnama, Praya, Lombok Tengah</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" style="text-decoration:none">
+            <div class="logo-icon">🌊</div>
+            <div class="logo-text">
+              Mandiri Pool
+              <span>& Spa · Lombok</span>
+            </div>
+          </a>
+          <p>
+            Spesialis kolam renang terpercaya di Praya, Lombok Tengah. Menyediakan layanan perawatan, suplai kimia, pompa, filter, dan konstruksi kolam renang berkualitas.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#services">Perawatan Kimia</a></li>
+            <li><a href="#services">Pompa & Filter</a></li>
+            <li><a href="#services">Kontraktor Kolam</a></li>
+            <li><a href="#services">Maintenance Rutin</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="https://wa.me/6285903741112" target="_blank" rel="noopener">WhatsApp: 0859 0374 1112</a></li>
+            <li><a href="mailto:abdulmrifai90@gmail.com">abdulmrifai90@gmail.com</a></li>
+            <li><a href="https://maps.google.com/?q=-8.8859523,116.2826327" target="_blank" rel="noopener">Jl. Purnama, Praya</a></li>
+            <li><a href="https://maps.google.com/?q=-8.8859523,116.2826327" target="_blank" rel="noopener">Kab. Lombok Tengah, NTB</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Mandiri Pool & Spa. Hak cipta dilindungi.</p>
+        <a href="https://www.google.com/maps/place/MANDIRI+POOL+SHOP+%26+SPA/@-8.8859523,116.2826327,17z" class="footer-google" target="_blank" rel="noopener">
+          <span>⭐</span>
+          Lihat di Google Maps
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── FLOATING WHATSAPP ─── -->
+  <a href="https://wa.me/6285903741112?text=Halo%20Mandiri%20Pool%20%26%20Spa%2C%20saya%20butuh%20bantuan!" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <div class="wa-float-tooltip">Chat WhatsApp Sekarang</div>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    // ─── NAVBAR SCROLL ───
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ─── PARALLAX HERO ───
+    const heroBg = document.getElementById('heroBg');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y < window.innerHeight * 1.5) {
+        heroBg.style.transform = `scale(1.05) translateY(${y * 0.25}px)`;
+      }
+    }, { passive: true });
+
+    // ─── SCROLL REVEAL ───
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealEls.forEach(el => observer.observe(el));
+
+    // ─── SMOOTH ANCHOR LINKS ───
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
