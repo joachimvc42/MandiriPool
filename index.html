@@ -699,6 +699,20 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
+    .about-feature-icon.rating-badge-mini {
+      width: 50px;
+      height: 50px;
+      background: var(--navy);
+      border: 1px solid rgba(14, 196, 224, 0.4);
+      box-shadow: 0 6px 18px rgba(7,25,40,0.25);
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1;
+      color: var(--aqua);
+      gap: 1px;
+    }
+    .about-feature-icon.rating-badge-mini span { color: var(--gold-light); font-size: 12px; }
     .about-feature-text strong {
       display: block;
       font-size: 15px;
@@ -1151,6 +1165,9 @@
       .footer-top { grid-template-columns: 1fr; gap: 40px; }
 
       .cta-wa-btn { padding: 18px 36px; font-size: 15px; }
+
+      #about .about-visual { display: none; }
+      #about .about-inner { gap: 0; }
     }
   </style>
 </head>
@@ -1287,7 +1304,7 @@
 
         <div class="about-features">
           <div class="about-feature">
-            <div class="about-feature-icon">🏆</div>
+            <div class="about-feature-icon rating-badge-mini">5.0<span>★</span></div>
             <div class="about-feature-text">
               <strong>Trusted & Top-Rated</strong>
               <p>A perfect 5.0 rating from 23 reviews on Google Maps, including reviews from Local Guides.</p>
