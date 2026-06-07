@@ -405,7 +405,9 @@
     .services-bg > div { flex: 1; background-size: cover; background-position: center; }
     .services-overlay-band {
       position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(7,25,40,0.9) 0%, rgba(10,36,56,0.78) 50%, rgba(7,25,40,0.86) 100%);
+      background:
+        radial-gradient(ellipse 60% 80% at 50% 55%, rgba(7,25,40,0.55) 0%, rgba(7,25,40,0.18) 70%, transparent 100%),
+        linear-gradient(135deg, rgba(7,25,40,0.5) 0%, rgba(10,36,56,0.34) 50%, rgba(7,25,40,0.48) 100%);
     }
     .services-band-inner {
       position: relative; z-index: 2;
@@ -419,7 +421,9 @@
       font-size: clamp(30px, 4vw, 46px);
       font-weight: 300; color: #fff; line-height: 1.05;
       margin-bottom: 34px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.55);
     }
+    .services-band-inner .section-eyebrow { text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
     .services-band-title em { font-style: italic; color: var(--aqua-light); }
     .svc-row { display: flex; justify-content: center; align-items: stretch; gap: 14px; flex-wrap: wrap; }
     .svc-item {
@@ -1325,7 +1329,7 @@
 
       <div class="products-grid">
         <div class="product-card reveal">
-          <div class="product-img-wrap" style="display:flex;align-items:center;justify-content:center;font-size:56px;background:linear-gradient(135deg,#e9f6f9,#cfeef4);">🧪</div>
+          <div class="product-img-wrap"><img class="product-img" src="assets/prod-chemicals.jpg" alt="Pool chemicals and clear blue pool water" loading="lazy" /></div>
           <div class="product-info">
             <div class="product-category">Pool Chemicals</div>
             <div class="product-name">Chlorine & Chemicals</div>
@@ -1334,7 +1338,7 @@
         </div>
 
         <div class="product-card reveal" style="transition-delay:0.1s">
-          <div class="product-img-wrap" style="display:flex;align-items:center;justify-content:center;font-size:56px;background:linear-gradient(135deg,#eef3f7,#d8e7f2);">🧫</div>
+          <div class="product-img-wrap"><img class="product-img" src="assets/prod-treatment.jpg" alt="Clear treated swimming pool water" loading="lazy" /></div>
           <div class="product-info">
             <div class="product-category">Water Treatment</div>
             <div class="product-name">PAC & Soda Ash</div>
@@ -1343,7 +1347,7 @@
         </div>
 
         <div class="product-card reveal" style="transition-delay:0.15s">
-          <div class="product-img-wrap" style="display:flex;align-items:center;justify-content:center;font-size:56px;background:linear-gradient(135deg,#e9f6f9,#cfeef4);">🔧</div>
+          <div class="product-img-wrap"><img class="product-img" src="assets/prod-pumps.jpg" alt="Pool circulation and filtration fitting" loading="lazy" /></div>
           <div class="product-info">
             <div class="product-category">Equipment</div>
             <div class="product-name">Pumps & Sand Filters</div>
@@ -1352,7 +1356,7 @@
         </div>
 
         <div class="product-card reveal" style="transition-delay:0.2s">
-          <div class="product-img-wrap" style="display:flex;align-items:center;justify-content:center;font-size:56px;background:linear-gradient(135deg,#eef3f7,#d8e7f2);">🧰</div>
+          <div class="product-img-wrap"><img class="product-img" src="assets/prod-accessories.jpg" alt="Pool ladder, steps and accessories" loading="lazy" /></div>
           <div class="product-info">
             <div class="product-category">Accessories</div>
             <div class="product-name">Pool Accessories</div>
