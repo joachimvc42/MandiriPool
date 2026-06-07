@@ -392,8 +392,55 @@
       max-width: 560px;
     }
 
-    /* ─── SERVICES ─── */
-    #services { background: var(--cream); }
+    /* ─── SERVICES (compact band, pool photos bg) ─── */
+    #services {
+      position: relative;
+      padding: 0;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .services-bg { position: absolute; inset: 0; display: flex; }
+    .services-bg > div { flex: 1; background-size: cover; background-position: center; }
+    .services-overlay-band {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(7,25,40,0.9) 0%, rgba(10,36,56,0.78) 50%, rgba(7,25,40,0.86) 100%);
+    }
+    .services-band-inner {
+      position: relative; z-index: 2;
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      padding: 56px 48px; text-align: center;
+    }
+    .services-band-inner .section-eyebrow { color: var(--aqua-light); justify-content: center; }
+    .services-band-inner .section-eyebrow::before { background: var(--aqua); }
+    .services-band-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 300; color: #fff; line-height: 1.05;
+      margin-bottom: 34px;
+    }
+    .services-band-title em { font-style: italic; color: var(--aqua-light); }
+    .svc-row { display: flex; justify-content: center; align-items: stretch; gap: 14px; flex-wrap: wrap; }
+    .svc-item {
+      display: flex; align-items: center; gap: 12px; padding: 13px 22px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 100px; backdrop-filter: blur(6px);
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+    }
+    .svc-item:hover { background: rgba(14,196,224,0.14); border-color: rgba(14,196,224,0.4); transform: translateY(-3px); }
+    .svc-ico {
+      width: 40px; height: 40px; flex-shrink: 0;
+      background: rgba(14,196,224,0.18); border: 1px solid rgba(14,196,224,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 19px;
+    }
+    .svc-txt { text-align: left; }
+    .svc-name { font-size: 14px; font-weight: 500; color: #fff; letter-spacing: 0.02em; }
+    .svc-tags { font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 2px; }
+    @media (max-width: 768px) { #services .svc-row { flex-direction: column; align-items: stretch; } }
+
+    /* ─── SERVICES (legacy, unused) ─── */
+    .services-legacy { background: var(--cream); }
 
     .services-header {
       display: flex;
@@ -1117,7 +1164,7 @@
 
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">Shop</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#cta">Contact</a></li>
@@ -1181,132 +1228,44 @@
     </div>
   </div>
 
-  <!-- ─── SERVICES ─── -->
+  <!-- ─── SERVICES (compact band, real pool photos bg) ─── -->
   <section id="services">
-    <div class="section-inner">
-      <div class="services-header">
-        <div>
-          <div class="section-eyebrow reveal">Our Services</div>
-          <h2 class="section-title reveal" style="transition-delay:0.1s">
-            Everything your<br>pool <em>needs</em>
-          </h2>
-        </div>
-        <p class="section-lead reveal" style="transition-delay:0.2s">
-          From pool chemicals and routine maintenance to pump and filter installation and full pool construction — all in one trusted shop in Kuta.
-        </p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card reveal">
-          <div class="service-bg" style="background: linear-gradient(135deg, var(--deep), var(--teal));"></div>
-          <div class="service-overlay"></div>
-          <div class="service-content">
-            <div class="service-icon">🧪</div>
-            <div class="service-name">Pool Chemicals</div>
-            <div class="service-desc">Chlorine, copper sulphate, PAC, soda ash and more — everything you need to keep your water balanced and crystal clear.</div>
-            <div class="service-tags">
-              <span class="service-tag">Chlorine</span>
-              <span class="service-tag">PAC</span>
-              <span class="service-tag">Soda Ash</span>
-              <span class="service-tag">Copper Sulphate</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="service-card reveal" style="transition-delay:0.1s">
-          <div class="service-bg" style="background: linear-gradient(135deg, var(--navy), var(--aqua));"></div>
-          <div class="service-overlay"></div>
-          <div class="service-content">
-            <div class="service-icon">🔧</div>
-            <div class="service-name">Pumps & Filters</div>
-            <div class="service-desc">Supply, installation and servicing of circulation pumps and sand filtration systems for clean, well-circulated water.</div>
-            <div class="service-tags">
-              <span class="service-tag">Pool Pumps</span>
-              <span class="service-tag">Sand Filter</span>
-              <span class="service-tag">Installation</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="service-card reveal" style="transition-delay:0.15s">
-          <div class="service-bg" style="background: linear-gradient(135deg, var(--deep), var(--gold));"></div>
-          <div class="service-overlay"></div>
-          <div class="service-content">
-            <div class="service-icon">🏗️</div>
-            <div class="service-name">Contractor & Supplier</div>
-            <div class="service-desc">Pool construction and renovation, plus full supply of equipment and spare parts delivered across Lombok.</div>
-            <div class="service-tags">
-              <span class="service-tag">Construction</span>
-              <span class="service-tag">Renovation</span>
-              <span class="service-tag">Supply</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="service-card reveal" style="transition-delay:0.2s">
-          <div class="service-bg" style="background: linear-gradient(135deg, var(--teal), var(--navy));"></div>
-          <div class="service-overlay"></div>
-          <div class="service-content">
-            <div class="service-icon">✨</div>
-            <div class="service-name">Chemical & Maintenance</div>
-            <div class="service-desc">Routine cleaning and chemical treatment so your pool stays clean, clear and ready to use all year round.</div>
-            <div class="service-tags">
-              <span class="service-tag">Cleaning</span>
-              <span class="service-tag">Treatment</span>
-              <span class="service-tag">Servicing</span>
-            </div>
-          </div>
-        </div>
+    <div class="services-bg">
+      <div style="background-image:url('assets/pool1.jpg')"></div>
+      <div style="background-image:url('assets/pool2.jpg')"></div>
+      <div style="background-image:url('assets/pool3.jpg')"></div>
+    </div>
+    <div class="services-overlay-band"></div>
+    <div class="services-band-inner">
+      <div class="section-eyebrow reveal">Our Services</div>
+      <h2 class="services-band-title reveal" style="transition-delay:0.05s">Everything your pool <em>needs</em></h2>
+      <div class="svc-row reveal" style="transition-delay:0.1s">
+        <div class="svc-item"><div class="svc-ico">🧪</div><div class="svc-txt"><div class="svc-name">Pool Chemicals</div><div class="svc-tags">Chlorine · PAC · Soda Ash</div></div></div>
+        <div class="svc-item"><div class="svc-ico">🔧</div><div class="svc-txt"><div class="svc-name">Pumps & Filters</div><div class="svc-tags">Pumps · Sand filters</div></div></div>
+        <div class="svc-item"><div class="svc-ico">🏗️</div><div class="svc-txt"><div class="svc-name">Contractor & Supplier</div><div class="svc-tags">Build · Renovate · Supply</div></div></div>
+        <div class="svc-item"><div class="svc-ico">✨</div><div class="svc-txt"><div class="svc-name">Chemical & Maintenance</div><div class="svc-tags">Cleaning · Treatment</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ─── GALLERY ─── -->
-  <section id="gallery">
-    <div class="section-inner">
-      <div class="gallery-header">
-        <div>
-          <div class="section-eyebrow reveal">Our Shop</div>
-          <h2 class="section-title reveal" style="transition-delay:0.1s">
-            The real <em>Mandiri</em><br>Pool & Spa
-          </h2>
-        </div>
-        <p class="section-lead reveal" style="transition-delay:0.2s">
-          Real photos from our shop on Jl. Pariwisata, Kuta — pool equipment, chemical stock and supply across Lombok.
-        </p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
-          <img class="gallery-img" src="assets/storefront.jpg" alt="Mandiri Pool & Spa shop front on Jl. Pariwisata, Kuta, Lombok" loading="lazy" />
-          <div class="gallery-caption">Our shop — Jl. Pariwisata, Kuta</div>
-        </div>
-        <div class="gallery-item reveal" style="transition-delay:0.1s">
-          <img class="gallery-img" src="assets/inside.jpg" alt="Pool filter tank and pumps inside Mandiri Pool & Spa" loading="lazy" />
-          <div class="gallery-caption">Pool equipment in store</div>
-        </div>
-        <div class="gallery-item reveal" style="transition-delay:0.15s">
-          <img class="gallery-img" src="assets/byowner.jpg" alt="Pool chemical drums loaded for delivery" loading="lazy" />
-          <div class="gallery-caption">Chemical supply & delivery</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── ABOUT / SHOP ─── -->
+  <!-- ─── OUR SHOP / ABOUT (merged) ─── -->
   <section id="about">
     <div class="about-inner">
       <div class="about-visual reveal">
-        <img
-          class="about-photo"
-          src="assets/inside.jpg"
-          alt="Pool filter, pump and equipment inside Mandiri Pool & Spa, Kuta"
-          loading="lazy"
-        />
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img class="gallery-img" src="assets/storefront.jpg" alt="Mandiri Pool & Spa shop front on Jl. Pariwisata, Kuta, Lombok" loading="lazy" />
+            <div class="gallery-caption">Our shop — Jl. Pariwisata, Kuta</div>
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="assets/inside.jpg" alt="Pool filter tank and pumps inside Mandiri Pool & Spa" loading="lazy" />
+            <div class="gallery-caption">Pool equipment in store</div>
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="assets/byowner.jpg" alt="Pool chemical drums loaded for delivery" loading="lazy" />
+            <div class="gallery-caption">Chemical supply & delivery</div>
+          </div>
+        </div>
         <div class="about-badge">
           <div class="about-badge-num">5.0★</div>
           <div class="about-badge-text">Google Rated · 23 Reviews</div>
@@ -1314,7 +1273,7 @@
       </div>
 
       <div class="about-content reveal" style="transition-delay:0.2s">
-        <div class="section-eyebrow">About Us</div>
+        <div class="section-eyebrow">Our Shop · About Us</div>
         <h2 class="section-title">
           The complete pool<br>shop in <em>Kuta</em>, Lombok
         </h2>
