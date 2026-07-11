@@ -1,5 +1,4 @@
 {
-  "$comment": "MAINTENANCE MODE ON. To bring the site back, delete this file (or empty the rewrites array) and redeploy. index.html is untouched.",
   "rewrites": [
     { "source": "/((?!maintenance\\.html$).*)", "destination": "/maintenance.html" }
   ]
